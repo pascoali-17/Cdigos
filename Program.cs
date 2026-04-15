@@ -1,74 +1,75 @@
 ﻿using System;
 
-public class Produto
+// Classe base
+public class Veiculo
 {
-    private string nome = "";
-    private double preco;
-    private int estoque;
+    public string marca;
+    public int velocidade;
 
-    public void DefinirNome(string novoNome)
+    public Veiculo(string marca, int velocidade)
     {
-        if (!string.IsNullOrEmpty(novoNome))
-        {
-            nome = novoNome;
-        }
+        this.marca = marca;
+        this.velocidade = velocidade;
     }
 
-    public void DefinirPreco(double novoPreco)
+    // Método que será sobrescrito
+    public virtual void Mover()
     {
-        if (novoPreco >= 0)
-        {
-            preco = novoPreco;
-        }
-    }
-
-    public void AdicionarEstoque(int quantidade)
-    {
-        if (quantidade > 0)
-        {
-            estoque += quantidade;
-        }
-    }
-
-    public bool Vender(int quantidade)
-    {
-        if (quantidade > 0 && quantidade <= estoque)
-        {
-            estoque -= quantidade;
-            return true;
-        }
-        return false;
-    }
-
-    public string ObterNome()
-    {
-        return nome;
-    }
-
-    public double ObterPreco()
-    {
-        return preco;
-    }
-
-    public int ObterEstoque()
-    {
-        return estoque;
+        Console.WriteLine("O veículo está se movendo.");
     }
 }
 
+// Classe Carro
+public class Carro : Veiculo
+{
+    public Carro(string marca, int velocidade) : base(marca, velocidade)
+    {
+    }
+
+    public override void Mover()
+    {
+        Console.WriteLine($"O carro da marca {marca} está andando a {velocidade} km/h.");
+    }
+}
+
+// Classe Moto
+public class Moto : Veiculo
+{
+    public Moto(string marca, int velocidade) : base(marca, velocidade)
+    {
+    }
+
+    public override void Mover()
+    {
+        Console.WriteLine($"A moto da marca {marca} está correndo a {velocidade} km/h.");
+    }
+}
+
+// Classe Caminhao
+public class Caminhao : Veiculo
+{
+    public Caminhao(string marca, int velocidade) : base(marca, velocidade)
+    {
+    }
+
+    public override void Mover()
+    {
+        Console.WriteLine($"O caminhão da marca {marca} está transportando carga a {velocidade} km/h.");
+    }
+}
+
+// Classe principal com Main
 class Program
 {
     static void Main(string[] args)
     {
-        Produto p = new Produto();
+        Veiculo carro = new Carro("Chevrolet", 85);
+        Veiculo moto = new Moto("Honda", 120);
+        Veiculo caminhao = new Caminhao("Volvo",90 );
 
-        p.DefinirNome("Caneta");
-        p.DefinirPreco(-3.50);
-        p.AdicionarEstoque(20);
-        p.Vender(5);
-
-        Console.WriteLine("Nome: " + p.ObterNome());
-        Console.WriteLine("Preço: " + p.ObterPreco());
-        Console.WriteLine("Estoque: " + p.ObterEstoque());
+        carro.Mover();
+        moto.Mover();
+        caminhao.Mover();
     }
 }
+
