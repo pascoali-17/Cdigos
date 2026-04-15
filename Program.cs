@@ -1,18 +1,58 @@
 ﻿using System;
 
-class Item
+public class Produto
 {
-    public string Nome { get; set; }
-    public string Tamanho { get; set; }
-    public string Cor { get; set; }
-    public string Uso { get; set; }
-    public int Valor { get; set; }
+    private string nome = "";
+    private double preco;
+    private int estoque;
 
-    public void Apresentar()
+    public void DefinirNome(string novoNome)
     {
-        Console.WriteLine(
-            $"Olá, preciso de um {Nome} que tenha o tamanho {Tamanho}, na cor {Cor}, para uso {Uso} e com o valor {Valor}."
-        );
+        if (!string.IsNullOrEmpty(novoNome))
+        {
+            nome = novoNome;
+        }
+    }
+
+    public void DefinirPreco(double novoPreco)
+    {
+        if (novoPreco >= 0)
+        {
+            preco = novoPreco;
+        }
+    }
+
+    public void AdicionarEstoque(int quantidade)
+    {
+        if (quantidade > 0)
+        {
+            estoque += quantidade;
+        }
+    }
+
+    public bool Vender(int quantidade)
+    {
+        if (quantidade > 0 && quantidade <= estoque)
+        {
+            estoque -= quantidade;
+            return true;
+        }
+        return false;
+    }
+
+    public string ObterNome()
+    {
+        return nome;
+    }
+
+    public double ObterPreco()
+    {
+        return preco;
+    }
+
+    public int ObterEstoque()
+    {
+        return estoque;
     }
 }
 
@@ -20,13 +60,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        Item item1 = new Item();
-        item1.Nome = "Cadeira";
-        item1.Tamanho = "médio";
-        item1.Cor = "vermelha";
-        item1.Uso = "diário";
-        item1.Valor = 150;
+        Produto p = new Produto();
 
-        item1.Apresentar();
+        p.DefinirNome("Caneta");
+        p.DefinirPreco(-3.50);
+        p.AdicionarEstoque(20);
+        p.Vender(5);
+
+        Console.WriteLine("Nome: " + p.ObterNome());
+        Console.WriteLine("Preço: " + p.ObterPreco());
+        Console.WriteLine("Estoque: " + p.ObterEstoque());
     }
 }
