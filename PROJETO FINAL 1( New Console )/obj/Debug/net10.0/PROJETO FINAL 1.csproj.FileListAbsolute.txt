@@ -1,0 +1,14 @@
+C:\Users\SEG\Desktop\PROJETO FINAL 1\bin\Debug\net10.0\PROJETO FINAL 1.exe
+C:\Users\SEG\Desktop\PROJETO FINAL 1\bin\Debug\net10.0\PROJETO FINAL 1.deps.json
+C:\Users\SEG\Desktop\PROJETO FINAL 1\bin\Debug\net10.0\PROJETO FINAL 1.runtimeconfig.json
+C:\Users\SEG\Desktop\PROJETO FINAL 1\bin\Debug\net10.0\PROJETO FINAL 1.dll
+C:\Users\SEG\Desktop\PROJETO FINAL 1\bin\Debug\net10.0\PROJETO FINAL 1.pdb
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\PROJETO FINAL 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\PROJETO FINAL 1.AssemblyInfoInputs.cache
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\PROJETO FINAL 1.AssemblyInfo.cs
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\PROJETO FINAL 1.csproj.CoreCompileInputs.cache
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\PROJETO FINAL 1.dll
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\refint\PROJETO FINAL 1.dll
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\PROJETO FINAL 1.pdb
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\PROJETO FINAL 1.genruntimeconfig.cache
+C:\Users\SEG\Desktop\PROJETO FINAL 1\obj\Debug\net10.0\ref\PROJETO FINAL 1.dll
