@@ -1,0 +1,14 @@
+C:\Users\SEG\Desktop\Winforms\bin\Debug\net10.0-windows\Winforms.exe
+C:\Users\SEG\Desktop\Winforms\bin\Debug\net10.0-windows\Winforms.deps.json
+C:\Users\SEG\Desktop\Winforms\bin\Debug\net10.0-windows\Winforms.runtimeconfig.json
+C:\Users\SEG\Desktop\Winforms\bin\Debug\net10.0-windows\Winforms.dll
+C:\Users\SEG\Desktop\Winforms\bin\Debug\net10.0-windows\Winforms.pdb
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\Winforms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\Winforms.AssemblyInfoInputs.cache
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\Winforms.AssemblyInfo.cs
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\Winforms.csproj.CoreCompileInputs.cache
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\Winforms.dll
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\refint\Winforms.dll
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\Winforms.pdb
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\Winforms.genruntimeconfig.cache
+C:\Users\SEG\Desktop\Winforms\obj\Debug\net10.0-windows\ref\Winforms.dll
